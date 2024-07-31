@@ -1,21 +1,10 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Home</title>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bulma@1.0.1/css/bulma.min.css"
-    />
-    <link rel="stylesheet" href="/styles.css" />
-  </head>
-  <body>
-    <div class="container">
+export default function Navbar() {
+  return (
+    <>
       <section class="section">
         <nav class="navbar" role="navigation" aria-label="main navigation">
           <div class="navbar-brand">
-            <a class="navbar-item" href="home.html">
+            <a class="navbar-item" href="/">
               <div class="content is-small">
                 <h1>Business Social Network Project</h1>
               </div>
@@ -37,15 +26,21 @@
 
           <div id="navbarHomePage" class="navbar-menu">
             <div class="navbar-start">
-              <a class="navbar-item" href="home.html"> Home </a>
+              <a class="navbar-item" href="/">
+                {" "}
+                Home{" "}
+              </a>
 
-              <a class="navbar-item" href="profiles.html"> Profiles </a>
+              <a class="navbar-item" href="/profiles">
+                {" "}
+                Profiles{" "}
+              </a>
 
               <div class="navbar-item has-dropdown is-hoverable">
                 <a class="navbar-link"> More </a>
 
                 <div class="navbar-dropdown">
-                  <a class="navbar-item"> About </a>
+                  <a class="navbar-item" href="/about"> About </a>
                   <a class="navbar-item"> Jobs </a>
                   <a class="navbar-item"> Contact </a>
                   <hr class="navbar-divider" />
@@ -65,6 +60,6 @@
           </div>
         </nav>
       </section>
-    </div>
-  </body>
-</html>
+    </>
+  );
+}
