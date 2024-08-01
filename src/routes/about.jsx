@@ -3,8 +3,8 @@ import Navbar from "../components/navbar";
 export default function About() {
   return (
     <>
+      <Navbar />
       <div className="container">
-        <Navbar />
         <div className="content">
           <h1 className="title">About</h1>
           <p>
