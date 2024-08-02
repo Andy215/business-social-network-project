@@ -8,6 +8,7 @@ import Root from "./routes/root";
 import About from "./routes/about";
 import Profiles from "./routes/profiles";
 import Profile from "./routes/profile";
+import Jobs from "./routes/jobs";
 
 const router = createBrowserRouter([
   {
@@ -109,6 +110,10 @@ const router = createBrowserRouter([
     path: "/about",
     element: <About />,
   },
+  {
+    path: "/jobs",
+    element: <Jobs />,
+  }
 ]);
 
 const root = createRoot(document.getElementById("root"));
