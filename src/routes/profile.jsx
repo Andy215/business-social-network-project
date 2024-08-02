@@ -4,14 +4,11 @@ export default function Profile(props) {
   return (
     <>
       <Navbar />
-      <div class="columns">
-        <div class="column is-half is-offset-one-quarter">
+      <div class="columns container">
+        <div class="column">
           <div class="box p-0">
             <figure class="image banner">
-              <img
-                src={props.bannerimgsrc}
-                alt="Banner image"
-              />
+              <img src={props.bannerimgsrc} alt="Banner image" />
             </figure>
             <div class="level">
               <div class="level-left">
@@ -36,7 +33,7 @@ export default function Profile(props) {
                   </div>
                 </div>
               </div>
-              <div class="level-right mx-5">
+              <div class="level-right mt-5 mr-5">
                 <div class="level-item">
                   <button class="button is-primary">Follow</button>
                 </div>

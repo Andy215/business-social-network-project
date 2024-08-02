@@ -4,7 +4,7 @@ export default function Profiles() {
   return (
     <>
       <Navbar />
-      <div class="grid">
+      <div class="grid container">
         <div class="cell">
           <div class="card">
             <div class="card-image">
